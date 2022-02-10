@@ -1,41 +1,60 @@
--- Database `electronics`
+-- phpMyAdmin SQL Dump
+-- version 4.9.2
+-- https://www.phpmyadmin.net/
+--
+-- Host: 127.0.0.1
+-- Generation Time: Apr 20, 2020 at 11:01 AM
+-- Server version: 10.4.10-MariaDB
+-- PHP Version: 7.1.33
+
+SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
+SET time_zone = "+00:00";
 
 
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8mb4 */;
 
+--
+-- Database: `shopee`
+--
 
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `cart`
+--
 
+CREATE TABLE `cart` (
+  `cart_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `item_id` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
----Table structure for thable `cart`
----
-CREATE TABLE `cart`(
-    `cart_id` int(11) NOT NULL
-    `user_id` int(11) NOT NULL
-    `item_id` int(11) NOT NULL
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+-- --------------------------------------------------------
 
+--
+-- Table structure for table `product`
+--
 
---------------------------------------------------
-
----Table structure for table   `product`
----
-
-CREATE TABLE `product`(
-    `item_id` int(11) NOT NULL,
-    `item_brand` varchar(200) NOT NULL,
-    `item_name` varchar(255) NOT NULL,
-    `item_price` double(10, 2) NOT NULL,
-    `item_image` varchar(255) NOT NULL,
-    `item_register` datetime DEFAULT NULL,
-)ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
+CREATE TABLE `product` (
+  `item_id` int(11) NOT NULL,
+  `item_brand` varchar(200) NOT NULL,
+  `item_name` varchar(255) NOT NULL,
+  `item_price` double(10,2) NOT NULL,
+  `item_image` varchar(255) NOT NULL,
+  `item_register` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`item_id`, `item_brand`, `item_name`, `item_price`, `item_image`, `item_register`) VALUES
-(1, 'Samsung', 'Samsung Galaxy 10', 152.00, './assets/products/samsung.jpg', '2020-03-28 11:08:57'), -- NOW()
+(1, 'Samsung', 'Samsung Galaxy 10', 152.00, './assets/products/samsung.jpg', '2020-03-28 11:08:57'), 
 (2, 'Redmi', 'Redmi Note 7', 122.00, './assets/products/redmi.jpg', '2020-03-28 11:08:57'),
 (3, 'Redmi', 'Redmi Note 6', 153.00, './assets/products/redmi1.jpg', '2020-03-28 11:08:57'),
 (4, 'Redmi', 'Redmi Note 5', 156.00, './assets/products/redmi2.jpg', '2020-03-28 11:08:57'),
@@ -51,7 +70,7 @@ INSERT INTO `product` (`item_id`, `item_brand`, `item_name`, `item_price`, `item
 (14, 'Samsung', 'Samsung Galaxy A12', 420.00, './assets/products/samsung5.jpg', '2020-03-28 11:08:57'),
 (15, 'Samsung', 'Samsung Note 10', 352.00, './assets/products/samsung6.jpg', '2020-03-28 11:08:57'),
 (16, 'Apple', 'Apple iPhone 5', 152.00, './assets/products/iphone.jpg', '2020-03-28 11:08:57'),
-(17, 'Apple', 'Apple iPhone 6', 152.00, './assets/products/speaker1.jpg', '2020-03-28 11:08:57'),
+(17, 'Apple', 'Apple iPhone 6', 152.00, './assets/products/iphone1.jpg', '2020-03-28 11:08:57'),
 (18, 'Apple', 'Apple iPhone 11', 1742.00, './assets/products/iphone2.jpg', '2020-03-28 11:08:57');
 (19, 'Apple', 'Apple iPhone 12', 1252.00, './assets/products/iphone3.jpg', '2020-03-28 11:08:57');
 (20, 'Apple', 'Apple iPhone XS', 752.00, './assets/products/iphone4.jpg', '2020-03-28 11:08:57');
@@ -72,19 +91,19 @@ INSERT INTO `product` (`item_id`, `item_brand`, `item_name`, `item_price`, `item
 (35, 'Macbook', 'Macbook Pro', 2252.00, './assets/products/macbook.jpg', '2020-03-28 11:08:57');
 (36, 'Macbook', 'Macbook Air', 2252.00, './assets/products/macbook1.jpg', '2020-03-28 11:08:57');
 (37, 'Macbook', 'Macbook Pro 14', 2252.00, './assets/products/macbook2.jpg', '2020-03-28 11:08:57');
-(37, 'Macbook', 'Macbook Air 2017', 2252.00, './assets/products/macbook3.jpg', '2020-03-28 11:08:57');
-(38, 'Macbook', 'Macbook Air Retina', 2252.00, './assets/products/macbook4.jpg', '2020-03-28 11:08:57');
-(39, 'Macbook', 'Macbook Air Mi', 2252.00, './assets/products/macbook5.jpg', '2020-03-28 11:08:57');
-(40, 'Hp', 'Clim Hp laptop', 152.00, './assets/products/hp.jpg', '2020-03-28 11:08:57'),
-(41, 'Hp', 'Hp Razor', 1742.00, './assets/products/hp1.jpg', '2020-03-28 11:08:57');
-(42, 'Hp', 'Hp', 1252.00, './assets/products/hp2.jpg', '2020-03-28 11:08:57');
-(43, 'Dell', 'Dell', 752.00, './assets/products/dell.jpg', '2020-03-28 11:08:57');
-(44, 'Dell', 'Dell', 1122.00, './assets/products/dell1.jpg', '2020-03-28 11:08:57');
-(45, 'Dell', 'Dell', 1352.00, './assets/products/dell2.jpg', '2020-03-28 11:08:57');
-(46, 'Macbook', 'Apple Products', 2252.00, './assets/products/all.jpg', '2020-03-28 11:08:57');
-(47, 'Macbook', 'Apple Products', 2252.00, './assets/products/all1.jpg', '2020-03-28 11:08:57');
-(48, 'Macbook', 'Apple Products', 2252.00, './assets/products/all2.jpg', '2020-03-28 11:08:57');
-(49, 'Huaweii', 'Huaweii', 2252.00, './assets/products/huaweii.jpg', '2020-03-28 11:08:57');
+(38, 'Macbook', 'Macbook Air 2017', 2252.00, './assets/products/macbook3.jpg', '2020-03-28 11:08:57');
+(39, 'Macbook', 'Macbook Air Retina', 2252.00, './assets/products/macbook4.jpg', '2020-03-28 11:08:57');
+(40, 'Macbook', 'Macbook Air Mi', 2252.00, './assets/products/macbook5.jpg', '2020-03-28 11:08:57');
+(41, 'Hp', 'Clim Hp laptop', 152.00, './assets/products/hp.jpg', '2020-03-28 11:08:57'),
+(42, 'Hp', 'Hp Razor', 1742.00, './assets/products/hp1.jpg', '2020-03-28 11:08:57');
+(43, 'Hp', 'Hp', 1252.00, './assets/products/hp2.jpg', '2020-03-28 11:08:57');
+(44, 'Dell', 'Dell', 752.00, './assets/products/dell.jpg', '2020-03-28 11:08:57');
+(45, 'Dell', 'Dell', 1122.00, './assets/products/dell1.jpg', '2020-03-28 11:08:57');
+(46, 'Dell', 'Dell', 1352.00, './assets/products/dell2.jpg', '2020-03-28 11:08:57');
+(47, 'Macbook', 'Apple Products', 2252.00, './assets/products/all.jpg', '2020-03-28 11:08:57');
+(48, 'Macbook', 'Apple Products', 2252.00, './assets/products/all1.jpg', '2020-03-28 11:08:57');
+(49, 'Macbook', 'Apple Products', 2252.00, './assets/products/all2.jpg', '2020-03-28 11:08:57');
+(50, 'Huaweii', 'Huaweii', 2252.00, './assets/products/huaweii.jpg', '2020-03-28 11:08:57');
 
 -- --------------------------------------------------------
 
@@ -164,8 +183,6 @@ ALTER TABLE `user`
   MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
-
-
-
-
-
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

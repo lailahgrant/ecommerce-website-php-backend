@@ -46,3 +46,6 @@ E-commerce Website in `OOP Php`, `Bootstrap`, `Owl carousel`, `PHP partial Templ
 - Cart table - store all information of the shopping cart item.
 - User table - store all user information.
 - Wish List table - store the user's save for later products.
+
+#### Fetch products
+- Display products from the database.
