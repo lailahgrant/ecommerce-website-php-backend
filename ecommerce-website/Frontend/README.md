@@ -25,7 +25,10 @@ E-commerce Website in `OOP Php`, `Bootstrap`, `Owl carousel`, `PHP partial Templ
     "start":"sass ./sass/style.scss style.css --watch"
   },
 > - - `npm start` in terminal
-> 
 
+#### PHP Partial Templates
+- Separate sections into different PHP files
+- - They're in `Template` folder.
+- Partial Template files start with an `_` e.g. `_banner-area.php`
 
 
