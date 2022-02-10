@@ -32,7 +32,7 @@ class DBController {
     }
 }
     
-}
+} //close of class
 
 
 

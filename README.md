@@ -40,3 +40,9 @@ E-commerce Website in `OOP Php`, `Bootstrap`, `Owl carousel`, `PHP partial Templ
 - connect to the `database` using `OOP`.
 - close the connection each time the database isn't in use.
 - Store the products in the database and retrieve them for display, filter them on display or manipulate images from the database and not static html.
+
+#### Database table
+- Product table - information about products.
+- Cart table - store all information of the shopping cart item.
+- User table - store all user information.
+- Wish List table - store the user's save for later products.
