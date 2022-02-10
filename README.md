@@ -35,3 +35,6 @@ E-commerce Website in `OOP Php`, `Bootstrap`, `Owl carousel`, `PHP partial Templ
 - Partial Template files start with an `_` e.g. `_banner-area.php`
 
 
+### Connect MySQL database
+- go to `phpMyAdmin` and create new `database`.
+- connect to the `database` using `OOP`.

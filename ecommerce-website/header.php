@@ -28,6 +28,9 @@
     <!-- Custom CSS files -->
     <link rel="stylesheet" href="style.css">
 
+    <?php
+    require("database/DBController.php");
+?>
 </head>
 
 <body>
