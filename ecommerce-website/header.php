@@ -33,7 +33,7 @@
     /**
      * Instead of the above use the following,
     */
-    require("functions.php");
+    require('functions.php');
 ?>
 </head>
 

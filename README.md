@@ -38,3 +38,5 @@ E-commerce Website in `OOP Php`, `Bootstrap`, `Owl carousel`, `PHP partial Templ
 ### Connect MySQL database
 - go to `phpMyAdmin` and create new `database`.
 - connect to the `database` using `OOP`.
+- close the connection each time the database isn't in use.
+- Store the products in the database and retrieve them for display, filter them on display or manipulate images from the database and not static html.

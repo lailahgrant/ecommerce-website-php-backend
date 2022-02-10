@@ -16,11 +16,25 @@ class DBController {
         if($this->con->connect_error){
             echo "Fail" .$this->con->connect_error;        
         }
-        //echo "Connection successfull";
+        echo "Connection successfull";
     }
     
+
+    public function __destruct(){
+    $this->closeConnection();
+    }
+
+    //method for closing MySQL connection
+    protected function closeConnection(){ //fn destructure
+    if($this->con != null){
+        $this->con->close();
+        $this->con = null;
+    }
+}
     
 }
+
+
 
 /**
  * Instead of creating this object, going to create a "functions.php" file on the root where objects will be created.
