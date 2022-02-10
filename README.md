@@ -28,7 +28,8 @@ E-commerce Website in `OOP Php`, `Bootstrap`, `Owl carousel`, `PHP partial Templ
   },
 > - - `npm start` in terminal
 
-#### PHP Partial Templates
+#### PHP Partial Templates 
+> - Turn .html files into .php files
 - Separate sections into different PHP files
 - - They're in `Template` folder.
 - Partial Template files start with an `_` e.g. `_banner-area.php`

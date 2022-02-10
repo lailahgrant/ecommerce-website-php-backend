@@ -6,8 +6,6 @@ button, button:focus {
   box-shadow: none !important;
 }
 
-/*"start":"sass ./sass/style.scss style.css --watch"*/
-
 a {
   text-decoration: none !important;
 }
