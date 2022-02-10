@@ -29,7 +29,11 @@
     <link rel="stylesheet" href="style.css">
 
     <?php
-    require("database/DBController.php");
+    // require("database/DBController.php");
+    /**
+     * Instead of the above use the following,
+    */
+    require("functions.php");
 ?>
 </head>
 

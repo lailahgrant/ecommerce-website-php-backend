@@ -16,11 +16,14 @@ class DBController {
         if($this->con->connect_error){
             echo "Fail" .$this->con->connect_error;        
         }
-        echo "Connection successfull";
+        //echo "Connection successfull";
     }
     
     
 }
 
+/**
+ * Instead of creating this object, going to create a "functions.php" file on the root where objects will be created.
+ */
 //DBController object
-$db = new DBController();
+//$db = new DBController();
