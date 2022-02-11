@@ -16,7 +16,7 @@ class DBController {
         if($this->con->connect_error){
             echo "Fail" .$this->con->connect_error;        
         }
-        echo "Connection successfull";
+        //echo "Connection successfull";
     }
     
 
