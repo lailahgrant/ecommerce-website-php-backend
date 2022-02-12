@@ -49,3 +49,4 @@ E-commerce Website in `OOP Php`, `Bootstrap`, `Owl carousel`, `PHP partial Templ
 
 #### Fetch products
 - Display products from the database.
+- 

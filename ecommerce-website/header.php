@@ -52,7 +52,7 @@
         <!-- start primary navigation -->
         <nav class="navbar navbar-expand-lg navbar-dark color-primary-bg">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">Kabaka Electronics</a>
+                <a class="navbar-brand" href="./index.php">Kabaka Electronics</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                     aria-label="Toggle navigation">

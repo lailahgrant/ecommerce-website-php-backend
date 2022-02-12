@@ -3,7 +3,8 @@
 <?php
 //$product from functions.php
 $product_shuffle = $product->getData();
-
+//shuffle products to avoid the sae sequency of Products - use pHP shuffle()
+shuffle($product_shuffle);
 ?>
 
 <section id="top-sale">
@@ -19,8 +20,9 @@ $product_shuffle = $product->getData();
 
             <div class="item py-2">
                 <div class="product font-raleway">
-                    <a href="#"><img src="<?php echo $item['item_image'] ??  "./assets/products/delljpg"; ?>"
-                            alt="Dell Laptop" class="img-fluid"></a>
+                    <a href="<?php printf('product.php?item_id=1')  ?>"><img
+                            src="<?php echo $item['item_image'] ??  "./assets/products/delljpg"; ?>" alt="Dell Laptop"
+                            class="img-fluid"></a>
                     <div class="text-center">
                         <h6><?php echo $item['item_name'] ?? "Unknown"; ?></h6>
                         <div class="rating text-warning font-size-12">

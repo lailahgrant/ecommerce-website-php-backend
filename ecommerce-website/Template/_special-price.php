@@ -16,6 +16,9 @@
     //print_r($unique);
     
     sort($unique);
+
+    //shuffle() images on different displays
+    shuffle($product_shuffle); 
     
     //print_r($brand); //ALL brands
     ?>

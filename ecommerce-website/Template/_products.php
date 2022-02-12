@@ -1,9 +1,17 @@
+<?php  
+    //$item_id = $_GET['item_id'] ?? 1;
+    //foreach($product->getData() as  $item) :
+     //   if($item['$item_id'] == $item_id) :
+?>
+
+
 <!-- product -->
 <section id="product" class="py-3">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
-                <img src="./assets/products/iphone1.jpg" alt="iphone" class="img-fluid">
+                <img src="<?php echo $item['item_image'] ?? "./assets/products/iphone1.jpg" ?>" alt="iphone"
+                    class="img-fluid">
                 <div class="row pt-4 font-size-16 font-rubik">
                     <div class="col">
                         <button type="submit" class="btn btn-danger form-control">Proceed to buy</button>
@@ -14,8 +22,8 @@
                 </div>
             </div>
             <div class="col-sm-6 py-5">
-                <h5 class="font-os font-size 20">iphone</h5>
-                <small>by Apple</small>
+                <h5 class="font-os font-size 20"><?php echo $item['item_name'] ?? "Unknown";  ?></h5>
+                <small>by <?php echo $item['item_brand'] ?? "Unknown";  ?></small>
                 <div class="d-flex">
                     <div class="rating text-warning font-size-12">
                         <span><i class="fas fa-star"></i></span>
@@ -33,7 +41,7 @@
                 <table class="my-3">
                     <tr class="font-raleway font-size-14">
                         <td>M.P.P: </td>
-                        <td><strike>$99900</strike></td>
+                        <td><strike><?php echo $item['item_price'] ?? "Unknown";  ?></strike></td>
                     </tr>
                     <tr class="font-raleway font-size-14">
                         <td>Deal Price: </td>
