@@ -43,7 +43,8 @@
                 <div class="grid-item <?php echo $item['item_brand']; ?> border">
                     <div class="item py-2" style="width: 200px;">
                         <div class="product font-raleway">
-                            <a href="#"><img src="<?php echo $item['item_image'] ?? "../assets/products/dell.jpg" ?>"
+                            <a href="<?php printf('%s?item_id=%s', 'product.php', $item['item_id'])  ?>"><img
+                                    src="<?php echo $item['item_image'] ?? "../assets/products/dell.jpg" ?>"
                                     alt="Samsung S20" class="img-fluid"></a>
                             <div class="text-center">
                                 <h6><?php echo $item['item_name'] ?? "Unknown"; ?></h6>

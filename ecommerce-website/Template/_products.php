@@ -1,7 +1,8 @@
-<?php  
-    //$item_id = $_GET['item_id'] ?? 1;
-    //foreach($product->getData() as  $item) :
-     //   if($item['$item_id'] == $item_id) :
+<?php 
+//connect the item_id to its product infor on an image click 
+    $item_id = $_GET['item_id'] ?? 1;
+    foreach($product->getData() as  $item) :
+        if($item['item_id'] == $item_id) :
 ?>
 
 
@@ -183,3 +184,9 @@
     </div>
 </section>
 <!-- product -->
+<?php 
+
+    endif;
+    endforeach;
+
+?>

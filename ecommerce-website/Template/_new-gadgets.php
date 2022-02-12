@@ -20,8 +20,9 @@ shuffle($product_shuffle);
 
             <div class="item py-2">
                 <div class="product font-raleway">
-                    <a href="#"><img src="<?php echo $item['item_image'] ??  "./assets/products/delljpg"; ?>"
-                            alt="Dell Laptop" class="img-fluid"></a>
+                    <a href="<?php printf('%s?item_id=%s', 'product.php', $item['item_id'])  ?>"><img
+                            src="<?php echo $item['item_image'] ??  "./assets/products/delljpg"; ?>" alt="Dell Laptop"
+                            class="img-fluid"></a>
                     <div class="text-center">
                         <h6><?php echo $item['item_name'] ?? "Unknown"; ?></h6>
                         <div class="rating text-warning font-size-12">
